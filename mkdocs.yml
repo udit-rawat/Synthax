@@ -1,0 +1,131 @@
+site_name: Synthax
+site_description: A JAX experiment
+
+nav:
+  - Index: index.md
+  - Introduction: Introduction.md
+  - Source-Code: SourceCode.md
+  - Process: Process.md
+  - Conclusion: Conclusion.md
+
+theme:
+  name: material
+  hide_site_name: true
+  logo: assets/logo/syx-1.png
+  favicon: assets/logo/syx-1.png
+
+  language: en
+  font:
+    text: Robo
+    code: Robo sans
+  palette:
+    - scheme: default
+      primary: light green
+      accent: light green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  plugins:
+    - social
+    - search
+    - glightbox
+
+  nav:
+    - Introduction
+    - Source Code
+    - Process
+    - Conclusion
+  features:
+    - tabs
+    - search
+    - navigation.tabs
+    - navigation.expand
+    - navigation.collapsible
+    - navigation.top
+    - palette
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    # - header.autohide
+    - navigation.footer
+    - content.code.copy
+
+extra:
+  homepage: /
+  generator: false
+  copy_code:
+    button_text: "Copy" # Optional: Customize the button text
+    tooltip_text: "Copy to clipboard" # Optional: Customize the tooltip text
+    success_text: "Copied!" # Optional: Customize the success text
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/udit-rawat
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/udit-rawat-65204a279/
+    - icon: fontawesome/brands/google
+      link: mailto:uditrawat1905@gmail.com
+
+  styles:
+    - |
+      .codehilite .hll {
+        background-color: #ffeeba; /* Highlighted line background color */
+      }
+      .codehilite {
+        background: #f8f9fa; /* Code block background color */
+        border: 1px solid #d6d8db; /* Code block border color */
+        border-radius: 4px; /* Optional: Rounded corners for code block */
+        margin: 0; /* Optional: Remove default code block margin */
+        padding: 1em; /* Optional: Add padding to code block */
+        position: relative; /* Required for absolute positioning of the language label */
+      }
+      .codehilite .lang-label {
+        position: absolute;
+        top: 0.25em;
+        right: 0.25em;
+        background-color: #343a40; /* Language label background color */
+        color: #ffffff; /* Language label text color */
+        padding: 0.2em 0.5em;
+        font-size: 0.8em;
+        border-radius: 4px;
+      }
+  footer: |
+    <div style="text-align: center; margin-top: 20px;">
+      <a target="_blank" href="https://icons8.com/icon/5KGHGfq5i7DU/tangent">Maths</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </div>
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - md_in_html
+  - pymdownx.mark
+  - pymdownx.extra
+  - pymdownx.highlight:
+      linenums_style: pymdownx-inline
+      auto_title: true
+      anchor_linenums: true
+      linenums: true
+      line_spans: __span
+      use_pygments: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+copyright: Copyright &copy; 2024-25 Udit Rawat

@@ -1,0 +1,41 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            .cache
+            ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install MkDocs and dependencies
+        run: |
+          pip install mkdocs-material==9.5.2  # Replace with the desired version
+          pip install pillow cairosvg
+
+      - name: Build and deploy MkDocs
+        run: mkdocs gh-deploy --force
