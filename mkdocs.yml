@@ -13,7 +13,7 @@ theme:
   hide_site_name: true
   logo: assets/logo/syx-1.png
   favicon: assets/logo/syx-1.png
-  site_url: "https://udit-rawat.github.io/Synthax/"
+  site_url: "."
 
   language: en
   font:
