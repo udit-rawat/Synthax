@@ -3,17 +3,17 @@ site_description: A JAX experiment
 
 nav:
   - Index: index.md
-  - Introduction: Introduction.md
-  - Source-Code: SourceCode.md
-  - Process: Process.md
-  - Conclusion: Conclusion.md
+  - Introduction: introduction.md
+  - Source-Code: sourceCode.md
+  - Process: process.md
+  - Conclusion: conclusion.md
 
 theme:
   name: material
   hide_site_name: true
   logo: assets/logo/syx-1.png
   favicon: assets/logo/syx-1.png
-  site_url: "."
+  site_url: "https://udit-rawat.github.io/Synthax"
 
   language: en
   font:
@@ -62,7 +62,7 @@ theme:
     - content.code.copy
 
 extra:
-  homepage: /
+  homepage: /Synthax/
   generator: false
   copy_code:
     button_text: "Copy" # Optional: Customize the button text
