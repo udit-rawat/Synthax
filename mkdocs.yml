@@ -2,11 +2,11 @@ site_name: Synthax
 site_description: A JAX experiment
 
 nav:
-  - Index: index.md
-  - Introduction: introduction.md
-  - Source-Code: sourceCode.md
-  - Process: process.md
-  - Conclusion: conclusion.md
+  - Index: Index.md
+  - Introduction: Introduction.md
+  - Source-Code: SourceCode.md
+  - Process: Process.md
+  - Conclusion: Conclusion.md
 
 theme:
   name: material
@@ -37,6 +37,11 @@ theme:
     - search
     - glightbox
 
+  nav:
+    - Introduction
+    - Source Code
+    - Process
+    - Conclusion
   features:
     - tabs
     - search
@@ -52,6 +57,7 @@ theme:
     - navigation.tracking
     - search.suggest
     - search.highlight
+    # - header.autohide
     - navigation.footer
     - content.code.copy
 
@@ -59,9 +65,9 @@ extra:
   homepage: /
   generator: false
   copy_code:
-    button_text: "Copy"
-    tooltip_text: "Copy to clipboard"
-    success_text: "Copied!"
+    button_text: "Copy" # Optional: Customize the button text
+    tooltip_text: "Copy to clipboard" # Optional: Customize the tooltip text
+    success_text: "Copied!" # Optional: Customize the success text
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/udit-rawat
@@ -73,22 +79,22 @@ extra:
   styles:
     - |
       .codehilite .hll {
-        background-color: #ffeeba;
+        background-color: #ffeeba; /* Highlighted line background color */
       }
       .codehilite {
-        background: #f8f9fa;
-        border: 1px solid #d6d8db;
-        border-radius: 4px;
-        margin: 0;
-        padding: 1em;
-        position: relative;
+        background: #f8f9fa; /* Code block background color */
+        border: 1px solid #d6d8db; /* Code block border color */
+        border-radius: 4px; /* Optional: Rounded corners for code block */
+        margin: 0; /* Optional: Remove default code block margin */
+        padding: 1em; /* Optional: Add padding to code block */
+        position: relative; /* Required for absolute positioning of the language label */
       }
       .codehilite .lang-label {
         position: absolute;
         top: 0.25em;
         right: 0.25em;
-        background-color: #343a40;
-        color: #ffffff;
+        background-color: #343a40; /* Language label background color */
+        color: #ffffff; /* Language label text color */
         padding: 0.2em 0.5em;
         font-size: 0.8em;
         border-radius: 4px;
