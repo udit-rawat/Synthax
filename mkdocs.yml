@@ -2,7 +2,7 @@ site_name: Synthax
 site_description: A JAX experiment
 
 nav:
-  - Index: Index.md
+  - Index: index.md
   - Introduction: Introduction.md
   - Source-Code: SourceCode.md
   - Process: Process.md
