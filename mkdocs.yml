@@ -13,7 +13,7 @@ theme:
   hide_site_name: true
   logo: assets/logo/syx-1.png
   favicon: assets/logo/syx-1.png
-  # site_url: "https://udit-rawat.github.io/Synthax"
+  site_url: "https://udit-rawat.github.io/Synthax"
 
   language: en
   font:
@@ -38,10 +38,11 @@ theme:
     - glightbox
 
   nav:
-    - Introduction
-    - Source Code
-    - Process
-    - Conclusion
+    - index
+    - introduction
+    - sourceCode
+    - process
+    - conclusion
   features:
     - tabs
     - search
@@ -57,17 +58,16 @@ theme:
     - navigation.tracking
     - search.suggest
     - search.highlight
-    # - header.autohide
     - navigation.footer
     - content.code.copy
 
 extra:
-  # homepage: /Synthax
+  homepage: /
   generator: false
   copy_code:
-    button_text: "Copy" # Optional: Customize the button text
-    tooltip_text: "Copy to clipboard" # Optional: Customize the tooltip text
-    success_text: "Copied!" # Optional: Customize the success text
+    button_text: "Copy"
+    tooltip_text: "Copy to clipboard"
+    success_text: "Copied!"
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/udit-rawat
@@ -79,22 +79,22 @@ extra:
   styles:
     - |
       .codehilite .hll {
-        background-color: #ffeeba; /* Highlighted line background color */
+        background-color: #ffeeba;
       }
       .codehilite {
-        background: #f8f9fa; /* Code block background color */
-        border: 1px solid #d6d8db; /* Code block border color */
-        border-radius: 4px; /* Optional: Rounded corners for code block */
-        margin: 0; /* Optional: Remove default code block margin */
-        padding: 1em; /* Optional: Add padding to code block */
-        position: relative; /* Required for absolute positioning of the language label */
+        background: #f8f9fa;
+        border: 1px solid #d6d8db;
+        border-radius: 4px;
+        margin: 0;
+        padding: 1em;
+        position: relative;
       }
       .codehilite .lang-label {
         position: absolute;
         top: 0.25em;
         right: 0.25em;
-        background-color: #343a40; /* Language label background color */
-        color: #ffffff; /* Language label text color */
+        background-color: #343a40;
+        color: #ffffff;
         padding: 0.2em 0.5em;
         font-size: 0.8em;
         border-radius: 4px;
