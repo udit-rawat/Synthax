@@ -37,12 +37,6 @@ theme:
     - search
     - glightbox
 
-  nav:
-    - index
-    - introduction
-    - sourceCode
-    - process
-    - conclusion
   features:
     - tabs
     - search
