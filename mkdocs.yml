@@ -62,7 +62,7 @@ theme:
     - content.code.copy
 
 extra:
-  homepage: /Synthax/
+  homepage: /Synthax
   generator: false
   copy_code:
     button_text: "Copy" # Optional: Customize the button text
